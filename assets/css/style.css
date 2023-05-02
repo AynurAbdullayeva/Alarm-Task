@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0 10px;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 440px;
+    padding: 30px 30px 38px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container #clockImg {
+    max-width: 103px;
+}
+
+.container h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.container .content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.content .column {
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    width: calc(100% / 3 - 5px);
+}
+
+.content.disable .column {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.column select {
+    width: 100%;
+    height: 53px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 19px;
+}
+
+.container button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
